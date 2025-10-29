@@ -27,7 +27,7 @@
 }
 
 .intro__title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 54px;
   line-height: 58px;
@@ -37,7 +37,7 @@
 }
 
 .intro__quote {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 34px;
@@ -47,7 +47,7 @@
 }
 
 .intro__blockquote {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 24px;
   margin: 0;
@@ -58,7 +58,7 @@
 }
 
 .intro__caption {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 16px;
   text-align: right;
@@ -66,7 +66,7 @@
 }
 
 .intro__text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 163%;
