@@ -1,6 +1,6 @@
 .place__content {
   display: grid;
-  grid-template-columns: 460px 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto 1fr;
   grid-template-areas:
     "title artist"
@@ -49,6 +49,11 @@
   box-shadow: 10px 10px 25px 0px #00000080;
   object-fit: cover;
   display: block;
+  transition: opacity 0.35s ease-in;
+}
+
+.place__image:hover {
+  opacity: 50%;
 }
 
 .place-text {
@@ -79,6 +84,9 @@
   box-shadow: 5px 5px 10px 0px #00000040;
 }
 
+.place__link:hover {
+  opacity: 50%;
+}
 @media screen and (max-width: 1024px) {
   .place__content {
     column-gap: 28px;
@@ -91,5 +99,33 @@
 
   .place__paragraph {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .place__content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "link"
+      "text"
+      "text";
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .place__title {
+    font-size: 32px;
+    padding: 0 16px;
+  }
+  .place__artist {
+    padding: 0 16px;
+  }
+  .place__link {
+    margin: 0 auto;
+  }
+  .place__paragraph {
+    padding: 0 16px;
   }
 }
